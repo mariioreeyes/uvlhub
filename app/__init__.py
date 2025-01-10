@@ -46,7 +46,7 @@ def create_app(config_name='development'):
         from app.modules.auth.models import User
         return User.query.get(int(user_id))
 
-    # Set up logging
+    # Set up loogging
     logging_manager = LoggingManager(app)
     logging_manager.setup_logging()
 
